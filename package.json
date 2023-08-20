@@ -1,0 +1,20 @@
+{
+  "name": "react-state-bridge",
+  "version": "1.0.7",
+  "description": "Global state management library with data and API interactions",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "lindow",
+  "license": "ISC",
+  "dependencies": {
+    "@types/jest": "^29.5.3",
+    "@types/node": "^20.5.0",
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "axios": "^1.4.0",
+    "react": "^18.2.0",
+    "typescript": "^5.1.6"
+  }
+}

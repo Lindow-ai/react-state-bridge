@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "target": "esnext",
+      "module": "esnext",
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "outDir": "dist",
+      "declaration": true,
+      "moduleResolution": "node" 
+    },
+    "include": ["/**/*", "hook", "interface", "type"],
+    "exclude": ["node_modules", "dist"]
+}
