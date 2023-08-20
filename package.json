@@ -1,6 +1,6 @@
 {
   "name": "react-state-bridge",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Global state management library with data and API interactions",
   "main": "index.ts",
   "scripts": {
@@ -8,6 +8,17 @@
   },
   "author": "lindow",
   "license": "ISC",
+  "keywords": [
+    "react",
+    "state",
+    "axios",
+    "HTTPS",
+    "api"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lindow-ai/react-state-bridge"
+},
   "dependencies": {
     "@types/jest": "^29.5.3",
     "@types/node": "^20.5.0",

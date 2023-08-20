@@ -154,6 +154,6 @@ AxiosRequestConfig['headers'])
 
 * **Lindow** - *react-state-bridge* - [Lindow](https://github.com/Lindow-ai)
 
-## Isssues
+## Issues
 
 If you have a bug or suggestions for improvement, don't hesitate to report it, right here. [issues](https://github.com/Lindow-ai/react-state-bridge/issues)
