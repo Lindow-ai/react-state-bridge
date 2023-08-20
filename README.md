@@ -140,3 +140,7 @@ useDateFetch(url: string = '', params?: any, token?: string)
 ## Authors
 
 * **Lindow** - *react-state-bridge* - [Lindow](https://github.com/Lindow-ai)
+
+## Isssues
+
+If you have a bug or suggestions for improvement, don't hesitate to report it, right here. [issues](https://github.com/Lindow-ai/react-state-bridge/issues)
