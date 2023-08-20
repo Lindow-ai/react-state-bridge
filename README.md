@@ -51,9 +51,10 @@ type YourDataType2 = {
 
 const MyComponent = () => {
   const url = 'https://api.example.com/data'
-  const url2 = 'https://api.example.com/data'
+  const url2 = 'https://api.example2.com/data'
 
   const token = env.YOUR_TOKEN
+
   const params = {
      yourparams1: 'params1',
      yourparams2: 'params2',
@@ -65,8 +66,15 @@ const MyComponent = () => {
      yourparams6: 'params6'
   }
 
-  const fetchResult = useDataFetch<YourDataType[]>(url, params, token)
-   const fetchResult2 = useDataFetch<YourDataType2[]>(url2, params2, token);
+  const headers = {
+    // ... Your headers ...
+  }
+  const headers2 = {
+    // ... Your headers ...
+  }
+
+  const fetchResult = useDataFetch<YourDataType[]>(url, params, token, headers)
+   const fetchResult2 = useDataFetch<YourDataType2[]>(url2, params2, token, headers2);
 
 // Using data for the first call
 
@@ -102,8 +110,12 @@ type PostData = {
 const MyComponent: React.FC = () => {
   const apiUrl = 'https://jsonplaceholder.typicode.com/posts';
   const yourAuthToken = env.YOUR_TOKEN;
+  const yourHeader = {
+    'apiKey': 'your-key',
+    'host': 'jsonplaceholder.typicode.com'
+  }
 
-  const fetchPostResult = useDataFetch<PostData[]>(url, null, yourAuthToken)
+  const fetchPostResult = useDataFetch<PostData[]>(url, null, yourAuthToken, yourHeader)
 
   const { data: postData, isLoading: isPostLoading, error: postError, messageSucess: postMessageSucess } = fetchPostResult
 
@@ -133,8 +145,9 @@ export default MyComponent;
 
 ### useDateFetch
 
-```js
-useDateFetch(url: string = '', params?: any, token?: string)
+```ts
+useDateFetch(url: AxiosRequestConfig['url'] = '', params?: AxiosRequestConfig['params'], token?: string, headers?: 
+AxiosRequestConfig['headers'])
 ```
 
 ## Authors

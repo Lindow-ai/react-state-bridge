@@ -1,6 +1,6 @@
 {
   "name": "react-state-bridge",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Global state management library with data and API interactions",
   "main": "index.ts",
   "scripts": {
